@@ -10,65 +10,146 @@
 </head>
 <body>
 
-<!--header-->
-    <div class="bg-indigo-400 p-5 flex justify-between">
+<div class="flex flex-col min-h-screen">
+<!--top nav-->
+           <div class="bg-gray-200 flex p-10 justify-around 2xl:items-center">
+               <h1 class="text-8xl text-indigo-400 font-light md:font-serif">craigslist</h1>
 
+               <div class="search">
+                   <input type="text" class="border-2 border-black border-opacity-25 w-96" placeholder="search craigslist">
+                   <button type="button" class="bg-gray-300 px-4 rounded-md">Search</button>
+               </div>
 
+               <div class="text-blue-400 space-x-8">
+                   <a href="#">my account</a>
+                   <select class="border-2 border-black border-opacity-25 bg-gray-200">
+                        <option><a href="#">english</a></option>
+                        <option><a href="#">spanish</a></option>
+                        <option><a href="#">french</a></option>
+                        <option><a href="#">khmer</a></option>
+                        <option><a href="#">chinese</a></option>
+                   </select>
+               </div>
+           </div>
 
-       <div class="top-nav">
-           <div class="logo">
-                <h1 class="font-extrabold">craigslist</h1>
-           </div>
-           <div class="search">
-               <input>
-               <button>More Search</button>
-           </div>
-           <div>
-               <a href="#">my account</a>
-               <a href="#">english</a>
-           </div>
-       </div>
 
 <!--bottom nav-->
-        <div class="bottom-nav">
-            <h2>Boston</h2>
-            <a href="#">gbs</a>
-            <a href="#">nwb</a>
-            <a href="#">bmw</a>
-            <a href="#">nos</a>
-            <a href="#">sob</a>
-        </div>
+                <div class="w-screen flex items-center">
+                    <h2 class="text-3xl font-bold p-10 ml-56">Boston</h2>
+                        <div class="text-gray-400 p-8">
+                            <a href="#">gbs</a>|
+                            <a href="#">nwb</a>|
+                            <a href="#">bmw</a>|
+                            <a href="#">nos</a>|
+                            <a href="#">sob</a>
+                        </div>
+                </div>
+
+<!--//end-->
 
 <!--hero-->
+        <div class="flex justify-center p-8 space-x-36 2xl:max-w-full h-screen">
+<!--left section-->
+            <div>
+                <h1 class="border-2 border-black border-opacity-50 flex justify-center bg-gray-200 font-bold p-2">Nearby Craigslist</h1>
+                    <div class="border-2 border-black border-opacity-50 overflow-y-scroll w-52 h-56 mt-4">
+                        <ul>
+                            <li><a href="#">Albany</a></li>
+                            <li><a href="#">Allentown</a></li>
+                            <li><a href="#">Burlington</a></li>
+                            <li><a href="#">Billerica</a></li>
+                            <li><a href="#">Concord</a></li>
+                            <li><a href="#">Lexington</a></li>
+                            <li><a href="#">Albany</a></li>
+                            <li><a href="#">Allentown</a></li>
+                            <li><a href="#">Binghamton</a></li>
+                            <li><a href="#">Cape Cod</a></li>
+                            <li><a href="#"><a>Catskills</a></a>
+                            <li><a href="#"><a>Central NJ</a></a>
+                        </ul>
+                    </div>
+             </div>
+
+<!-- Box 1 -->
+            <div class="text-blue-400">
+                <h1 class="flex justify-center font-bold bg-gray-200 font-bold p-2">Community</h1>
+                    <div class="flex w-40 h-56 mt-4">
+                        <ul>
+                            <li><a href="#">activities</a></li>
+                            <li><a href="#">artists</a></li>
+                            <li><a href="#">childcare</a></li>
+                            <li><a href="#">classes</a></li>
+                            <li><a href="#">events</a></li>
+                            <li><a href="#">general</a></li>
+                            <li><a href="#">groups</a></li>
+                            <li><a href="#">local news</a></li>
+                        </ul>
+
+                        <ul class="pl-4">
+                            <li><a href="#">lost+found</a></li>
+                            <li><a href="#">missed</a></li>
+                            <li><a href="#">connections</a></li>
+                            <li><a href="#">musicians</a></li>
+                            <li><a href="#">pets</a></li>
+                            <li><a href="#">politics</a></li>
+                            <li><a href="#">rants & raves</a></li>
+                            <li><a href="#">rideshare</a></li>
+                            <li><a href="#">volunteers</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+<!-- Box 2 -->
+            <div class="text-blue-400">
+                <h1 class="flex justify-center font-bold bg-gray-200 font-bold p-2">Housing</h1>
+                    <ul class="h-56 mt-4">
+                        <li><a href="#">apts / housing</a></li>
+                        <li><a href="#">housing swap</a></li>
+                        <li><a href="#">housing wanted</a></li>
+                        <li><a href="#">office / commercial</a></li>
+                        <li><a href="#">parking / storage</a></li>
+                        <li><a href="#">real estate for sale</a></li>
+                        <li><a href="#">rooms / shared</a></li>
+                        <li><a href="#">rooms wanted</a></li>
+                        <li><a href="#">sublets / temporary</a></li>
+                        <li><a href="#">vacation rentals</a></li>
+                    </ul>
+            </div>
+
+<!-- Box 3 -->
+            <div class="text-blue-400">
+                <h1 class="flex justify-center font-bold bg-gray-200 font-bold p-2">Jobs</h1>
+                    <ul class="h-56 mt-4">
+                        <li><a href="#">accounting+finance</a></li>
+                        <li><a href="#">admin / office</a></li>
+                        <li><a href="#">arch / engineering</a></li>
+                        <li><a href="#">art / media / design</a></li>
+                        <li><a href="#">biotech / science</a></li>
+                        <li><a href="#">business / mgmt</a></li>
+                        <li><a href="#">customer service</a></li>
+                        <li><a href="#">education</a></li>
+                        <li><a href="#">etc / misc</a></li>
+                        <li><a href="#">food / bev / hosp</a></li>
+                        <li><a href="#">general labor</a></li>
+                    </ul>
+            </div>
+
+<!--right section -->
+            <div>
+                <h1 class="border-2 border-black border-opacity-50 flex justify-center font-bold bg-gray-200 font-bold p-2">Event Calendar</h1>
+                <h1 class="border-2 border-black border-opacity-50 flex justify-center bg-gray-200 mt-4">June 2021</h1>
+                <div class="border-2 border-black border-opacity-50 flex justify-center w-52"><img src="images/calendar.png" alt="calendar"></div>
+                <a href="#" class="text-blue-400 flex justify-center mt-5">create a post</a>
+            </div>
+     </div>
+
+<!--//end-->
+<!--footer-->
     <div>
-        <div></div>
-        <div></div>
+        <div class="flex justify-center items-center bg-gray-200 w-screen">
+            <p class="text-blue-300">&copy; craigslist 2021</p>
+        </div>
     </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-
-
-
-
-
-
-
-
-
-    </div>
+</div>
 </body>
 </html>
